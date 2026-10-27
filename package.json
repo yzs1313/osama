@@ -1,0 +1,17 @@
+{
+  "name": "osamah-site",
+  "version": "1.0.0",
+  "description": "موقع OSAMAH الرسمي: بثوث، تعليقات، أخبار، تسجيل دخول (إيميل / Discord / Google) ولوحة مشرفين",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSAMAH | الموقع الرسمي</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="hero">
+  <div class="top" id="top"></div>
+  <div class="hero-in">
+    <h1 class="brand">OSAMAH</h1>
+    <div class="tag" data-i>الموقع الرسمي • بثوث • آراء • أخبار</div>
+  </div>
+</section>
+
+<div class="lives" id="live"></div>
+
+<nav id="tabs">
+  <button data-t="streams" class="on" data-i>البثوث</button>
+  <button data-t="comments" data-i>التعليقات</button>
+  <button data-t="news" data-i>الأخبار</button>
+  <button data-t="social" data-i>سوشل</button>
+  <button data-t="discord" data-i>دسكورد</button>
+  <button data-t="tickets" id="ticketsTab" hidden>التذاكر</button>
+  <button data-t="kick" id="kickTab" hidden>ربط Kick</button>
+  <button data-t="users" id="usersTab" hidden>المستخدمين</button>
+</nav>
+<main id="view"></main>
+<footer data-i>© OSAMAH — الموقع الرسمي للمعجبين</footer>
+
+<div class="overlay" id="auth" hidden>
+  <div class="modal">
+    <h2 id="authTitle">تسجيل الدخول</h2>
+    <input id="aName" placeholder="الاسم" data-iph autocomplete="nickname" hidden>
+    <input id="aEmail" type="email" placeholder="الإيميل" data-iph dir="ltr" autocomplete="email">
+    <input id="aPass" type="password" placeholder="كلمة المرور (8 خانات على الأقل)" data-iph dir="ltr" autocomplete="current-password">
+    <div class="err" id="aErr"></div>
+    <button class="btn" id="aGo">دخول</button>
+    <button class="btn g" id="aClose" data-i>إلغاء</button>
+    <div class="or" id="aOr" hidden><span data-i>أو</span></div>
+    <button class="btn gg" id="aGoogle" data-a="googleLogin" hidden><span data-i>المتابعة عبر Google</span></button>
+    <button class="btn dc" id="aDiscord" data-a="discordLogin" hidden><span data-i>المتابعة عبر Discord</span></button>
+    <div class="meta sw"><a href="#" id="aSwitch">ما عندك حساب؟ سجّل الحين</a></div>
+  </div>
+</div>
+<button class="fab" data-a="openSupport"><span data-i>الدعم</span></button>
+<div class="overlay" id="sup" hidden>
+  <div class="modal wide">
+    <div class="row"><h2 data-i>الدعم الفني</h2><button class="btn g s" data-a="closeSupport" data-i>إغلاق</button></div>
+    <div id="supBody"></div>
+  </div>
+</div>
+<script src="icons.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
